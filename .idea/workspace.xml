@@ -23,10 +23,10 @@
       <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vault-on-nomad.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/clients.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/clients.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/nomad-client-vault-backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/nomad-client-vault-backup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/servers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/servers.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
   </component>
   <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -82,7 +82,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "demo",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/Users/rbarnes/Developer/devops-rob/vault-on-nomad/3-nomad-job-example-deployment",
     "node.js.detected.package.eslint": "true",

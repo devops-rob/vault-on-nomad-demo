@@ -91,4 +91,5 @@ EOF
  }
 EOF
 
+systemctl enable nomad
 systemctl restart nomad
