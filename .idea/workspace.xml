@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2054298-2018-4468-9412-d18e8b275562" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../01-login/.envrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../01-login/.envrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/auth0-helper/platform/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/auth0-helper/platform/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/vault-crypto/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/vault-crypto/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/vault-crypto/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/vault-crypto/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/verification/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/verification/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/verification/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/verification/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assets-atlas/verification/verify.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../assets-atlas/verification/verify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/demo-app.nomad" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/demo-app.nomad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/files/nomad/config.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/files/nomad/config.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/network.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/network.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/nomad.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/nomad.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/variable.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/variable.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/vault.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/jumppad/vault.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vault-on-nomad.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "devops-rob"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="98dfa4d0-cc2d-42b5-8076-a5bbe1e914f6" />
+        <option name="url" value="git@github.com:target-cli/target-cli.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2cuVCyfVNZFituF5ENKNhineYsl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "demo",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/rbarnes/Developer/devops-rob/vault-on-nomad/3-nomad-job-example-deployment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "Shell Script"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/3-nomad-job-example-deployment" />
+      <recent name="$PROJECT_DIR$/1-nomad-infrastrcuture" />
+      <recent name="$PROJECT_DIR$/2-nomad-configuration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
