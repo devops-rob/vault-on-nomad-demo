@@ -114,16 +114,17 @@ resource "aws_eip_association" "nomad_server" {
 }
 
 resource "aws_instance" "nomad_servers" {
-  ami                         = data.aws_ami.ubuntu.id
-  instance_type               = "t3.micro"
-  subnet_id                   = module.vpc.public_subnets.0
-  key_name                    = aws_key_pair.deployer.key_name
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t3.micro"
+  subnet_id     = module.vpc.public_subnets.0
+  key_name      = aws_key_pair.deployer.key_name
 
 
   user_data = templatefile("./servers.sh", {
-    NOMAD_SERVER_TAG   = "nomad_server"
-    NOMAD_SERVER_COUNT = 1
-    NOMAD_ADDR         = aws_eip.nomad_server.public_ip
+    NOMAD_SERVER_TAG     = "true"
+    NOMAD_SERVER_TAG_KEY = "nomad_server"
+    NOMAD_SERVER_COUNT   = 1
+    NOMAD_ADDR           = aws_eip.nomad_server.public_ip
   })
 
   vpc_security_group_ids = [

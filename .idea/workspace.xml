@@ -24,8 +24,7 @@
       <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/providers.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" beforeDir="false" afterPath="$PROJECT_DIR$/../nomad-vault-workload-identity-demo/terraform/vault/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/clients.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/clients.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/nomad-client-vault-backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/nomad-client-vault-backup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/compute.tf" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/compute.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1-nomad-infrastructure/servers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/1-nomad-infrastructure/servers.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../target-cli/.idea/vcs.xml" afterDir="false" />
     </list>

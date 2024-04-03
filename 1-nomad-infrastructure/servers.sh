@@ -22,7 +22,7 @@ server {
   bootstrap_expect = ${NOMAD_SERVER_COUNT}
 
   server_join {
-    retry_join = ["provider=aws tag_value=${NOMAD_SERVER_TAG}"]
+    retry_join = ["provider=aws tag_value=${NOMAD_SERVER_TAG} tag_key=${NOMAD_SERVER_TAG_KEY}"]
   }
 
   oidc_issuer      = "http://${NOMAD_ADDR}:4646"
