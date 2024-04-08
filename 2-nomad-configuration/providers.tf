@@ -15,7 +15,7 @@ terraform {
 data "terraform_remote_state" "tfc" {
   backend = "remote"
   config = {
-    organization = "iam-devopsrob"
+    organization = "org name"
 
     workspaces = {
       name = "1-nomad-infrastructure"
