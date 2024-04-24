@@ -96,8 +96,14 @@ EOF
     201,
     204,
   ]
+
   retry_interval = 10
   timeout        = 10
+
+  depends_on = [
+    nomad_job.vault-unsealer
+  ]
+
 }
 
 resource "terracurl_request" "snapshot_role" {
@@ -139,6 +145,10 @@ EOF
     200,
     201,
     204,
+  ]
+
+  depends_on = [
+    nomad_job.vault-unsealer
   ]
 
 }
