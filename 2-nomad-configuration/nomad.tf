@@ -4,7 +4,7 @@ resource "nomad_namespace" "vault" {
 }
 
 resource "nomad_job" "vault" {
-  jobspec = file("vault.nomad")
+  jobspec = file("nomad-jobs/vault.nomad")
   depends_on = [
     nomad_namespace.vault
   ]
@@ -46,7 +46,7 @@ resource "nomad_variable" "unseal" {
 }
 
 resource "nomad_job" "vault-unsealer" {
-  jobspec = file("vault-unsealer.nomad")
+  jobspec = file("nomad-jobs/vault-unsealer.nomad")
   depends_on = [
     nomad_namespace.vault,
     nomad_variable.unseal,

@@ -43,8 +43,11 @@ job "vault-cluster" {
       }
 
       config {
-        image      = "hashicorp/vault:1.15"
-        privileged = true
+        image      = "hashicorp/vault:1.16"
+
+        cap_add = [
+          "ipc_lock"
+        ]
 
         ports = [
           "api",

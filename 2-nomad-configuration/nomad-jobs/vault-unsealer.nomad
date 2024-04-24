@@ -15,10 +15,6 @@ job "vault-unsealer" {
     task "vault-unsealer" {
       driver = "docker"
 
-      cap_add = [
-        "ipc_lock"
-      ]
-
       config {
         image      = "devopsrob/vault-unsealer:0.2"
 
