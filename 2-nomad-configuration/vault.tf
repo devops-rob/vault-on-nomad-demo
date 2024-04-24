@@ -148,7 +148,9 @@ EOF
   ]
 
   depends_on = [
-    nomad_job.vault-unsealer
+    nomad_job.vault-unsealer,
+    terracurl_request.snapshot_policy
   ]
 
 }
+

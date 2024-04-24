@@ -4,7 +4,9 @@ resource "nomad_namespace" "vault" {
 }
 
 resource "nomad_job" "vault" {
-  jobspec = file("nomad-jobs/vault.nomad")
+  jobspec          = file("nomad-jobs/vault.nomad")
+  purge_on_destroy = true
+
   depends_on = [
     nomad_namespace.vault
   ]
@@ -30,27 +32,35 @@ EOF
   ]
 }
 
-output "init" {
-  value = terracurl_request.init.response
-}
-
 resource "nomad_variable" "unseal" {
   path      = "nomad/jobs/vault-unsealer"
   namespace = "vault-cluster"
 
   items = {
-    key1       = jsondecode(terracurl_request.init.response).keys[0]
-    key2       = jsondecode(terracurl_request.init.response).keys[1]
-    key3       = jsondecode(terracurl_request.init.response).keys[2]
+    key1 = jsondecode(terracurl_request.init.response).keys[0]
+    key2 = jsondecode(terracurl_request.init.response).keys[1]
+    key3 = jsondecode(terracurl_request.init.response).keys[2]
   }
 }
 
 resource "nomad_job" "vault-unsealer" {
-  jobspec = file("nomad-jobs/vault-unsealer.nomad")
+  jobspec          = file("nomad-jobs/vault-unsealer.nomad")
+  purge_on_destroy = true
+
+
   depends_on = [
     nomad_namespace.vault,
     nomad_variable.unseal,
     nomad_job.vault
+  ]
+}
+
+resource "nomad_job" "snapshot" {
+  jobspec          = file("nomad-jobs/snapshot.nomad")
+  purge_on_destroy = true
+
+  depends_on = [
+    terracurl_request.snapshot_role
   ]
 }
 

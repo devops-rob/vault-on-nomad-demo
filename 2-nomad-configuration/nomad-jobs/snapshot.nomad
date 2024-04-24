@@ -62,7 +62,7 @@ vault_token=$(vault write \
 
 vault login \
   -address=$vault_addr \
-  $vault_token
+  $vault_token > dev/null
 
 # Find the cluster leader
 leader_address=$(curl \
