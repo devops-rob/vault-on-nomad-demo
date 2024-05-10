@@ -69,9 +69,7 @@ leader_address=$(curl \
     ${vault_addr}/v1/sys/leader | \
     jq -r '.leader_address')
 
-echo $leader_address
 # Take snapshot
-
 date=$(date -I)
 
 vault operator raft snapshot save \
