@@ -1,3 +1,3 @@
 variable "ssh_key" {
-  default = "/Users/rbarnes/.ssh/id_rsa.pub"
+  default = "/Users/$(whoami)/.ssh/id_rsa.pub"
 }
