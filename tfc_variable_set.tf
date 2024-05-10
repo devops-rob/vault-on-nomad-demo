@@ -47,7 +47,6 @@ resource "tfe_variable_set" "this" {
   description  = "AWS keys and secrets"
   organization = tfe_organization.this.name
 }
-
 resource "tfe_variable" "this" {
   for_each = local.aws_variables
 

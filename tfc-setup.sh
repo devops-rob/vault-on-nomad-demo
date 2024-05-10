@@ -49,4 +49,3 @@ sed "s/TFC-ORG/$TF_VAR_tfc_org/g" ./3-nomad-example-job-deployment/providers.tf 
 terraform -chdir=1-nomad-infrastructure init && \
 terraform -chdir=2-nomad-configuration init && \
 terraform -chdir=3-nomad-example-job-deployment init
-
