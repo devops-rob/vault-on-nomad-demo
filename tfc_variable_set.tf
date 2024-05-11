@@ -29,16 +29,16 @@ resource "tfe_organization" "this" {
   email = "admin@company.com"
 }
 
-data "tfe_workspace" "1-nomad-infrastructure" {
+data "tfe_workspace" "nomad-infrastructure" {
   name         = "1-nomad-infrastructure"
   organization = tfe_organization.this.id
 }
 
-data "tfe_workspace" "2-nomad-configuration" {
+data "tfe_workspace" "nomad-configuration" {
   name         = "2-nomad-configuration"
   organization = tfe_organization.this.id
 }
-data "tfe_workspace" "3-nomad-job-example-deployment" {
+data "tfe_workspace" "nomad-job-example-deployment" {
   name         = "3-nomad-job-example-deployment"
   organization = tfe_organization.this.id
 }
@@ -47,9 +47,7 @@ resource "tfe_variable_set" "this" {
   description  = "AWS keys and secrets"
   organization = tfe_organization.this.name
 }
-locals{
-	AWS
-}
+
 resource "tfe_variable" "this" {
   for_each = local.aws_variables
 

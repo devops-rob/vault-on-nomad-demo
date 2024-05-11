@@ -1,7 +1,7 @@
 variable "tfc_org" {
   default = "my-org"
 }
-variable "description" {
+variable "variables_descriptions" {
   description = "(Optional) A description for the variable set"
   type        = string
   default     = ""
@@ -13,7 +13,7 @@ variable "environment_variables" {
 
 Item syntax:
 {
-  AWS_DEFAULT_REGION = value1
+  AWS_DEFAULT_REGION = value1,
   ssh_key = value2
   ...
 }
@@ -28,7 +28,7 @@ variable "aws_environment_sensitive_variables" {
 
 Item syntax:
 {
-  AWS_ACCESS_KEY_ID = value1
+  AWS_ACCESS_KEY_ID = value1,
   AWS_SECRET_ACCESS_KEY = value2
   ...
 }

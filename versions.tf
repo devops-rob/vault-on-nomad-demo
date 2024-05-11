@@ -9,4 +9,5 @@ terraform {
 
 provider "tfe" {
   # Configuration options
+  organization = var.tfc_org
 }

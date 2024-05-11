@@ -1,0 +1,10 @@
+aws_environment_sensitive_variables = {
+  AWS_ACCESS_KEY_ID = "value1",
+  AWS_SECRET_ACCESS_KEY = "value2"
+}
+environment_variables               = {
+  AWS_DEFAULT_REGION = "value",
+  ssh_key = "local/path/to/ssh.pub"
+  }
+tfc_org                             = ""
+variables_descriptions              = ""

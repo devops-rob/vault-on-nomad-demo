@@ -20,9 +20,10 @@ bash ./tfc-setup.sh
 ```
 
 Decide if you want to run remote or local? with TFC/TFE if you choose local you will need to update the workspaces "execution mode "in the settings it defaults to `remote`.
-* https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/1-nomad-configuration/settings/general
-* https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/2-nomad-configuration/settings/general
-* https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/3-nomad-example-job-deployment/settings/general
+
+* <https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/1-nomad-configuration/settings/general>
+* <https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/2-nomad-configuration/settings/general>
+* <https://app.terraform.io/app/$TF_VAR_tfc_org/workspaces/3-nomad-example-job-deployment/settings/general>
 
 If you want to continue with `remote` you will need to add your SSH key and AWS credentials to TFC take a look at this tutorial <https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-multiple-variable-sets>
 

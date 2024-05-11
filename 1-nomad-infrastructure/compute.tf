@@ -120,7 +120,7 @@ resource "aws_instance" "nomad_servers" {
   key_name      = aws_key_pair.deployer.key_name
 
 
-  user_data = templatefile("./servers.sh", {
+  user_data = templatefile("${path.cwd}/templates/servers.sh", {
     NOMAD_SERVER_TAG     = "true"
     NOMAD_SERVER_TAG_KEY = "nomad_server"
     NOMAD_SERVER_COUNT   = 1
@@ -159,7 +159,7 @@ resource "aws_instance" "nomad_clients" {
   key_name                    = aws_key_pair.deployer.key_name
   associate_public_ip_address = true
 
-  user_data = templatefile("./clients.sh", {
+  user_data = templatefile("${path.cwd}/templates/clients.sh", {
     NOMAD_SERVERS_ADDR = "${aws_instance.nomad_servers.private_ip}"
   })
 
@@ -197,7 +197,7 @@ resource "aws_instance" "nomad_clients_vault_backup" {
   key_name                    = aws_key_pair.deployer.key_name
   associate_public_ip_address = true
 
-  user_data = templatefile("./nomad-client-vault-backup.sh", {
+  user_data = templatefile("${path.cwd}/templates/nomad-client-vault-backup.sh", {
     NOMAD_SERVERS_ADDR = "${aws_instance.nomad_servers.private_ip}"
   })
 
