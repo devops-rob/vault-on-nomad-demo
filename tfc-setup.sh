@@ -15,7 +15,7 @@ terraform {
     }
   }
 }
-' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 1-nomad-infrastructure/backend.tf
+' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 1-nomad-infrastructure/backend_override.tf
 
 echo '
 terraform {
@@ -28,7 +28,7 @@ terraform {
     }
   }
 }
-' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 2-nomad-configuration/backend.tf
+' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 2-nomad-configuration/backend_override.tf
 
 echo '
 terraform {
@@ -41,8 +41,12 @@ terraform {
     }
   }
 }
-' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 3-nomad-example-job-deployment/backend.tf
+' | sed "s/TFC-ORG/$TF_VAR_tfc_org/g" > 3-nomad-example-job-deployment/backend_override.tf
+
+sed "s/TFC-ORG/$TF_VAR_tfc_org/g" ./2-nomad-configuration/providers.tf > ./2-nomad-configuration/providers_override.tf
+# sed "s/TFC-ORG/$TF_VAR_tfc_org/g" ./3-nomad-example-job-deployment/providers.tf > ./3-nomad-example-job-deployment/providers_override.tf
 
 terraform -chdir=1-nomad-infrastructure init && \
 terraform -chdir=2-nomad-configuration init && \
 terraform -chdir=3-nomad-example-job-deployment init
+

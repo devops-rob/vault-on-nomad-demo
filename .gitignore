@@ -55,7 +55,3 @@ override.tf.json
 terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform,shell,git
-*backend.tf
-1-nomad-infrastructure/backend.tf
-2-nomad-configuration/backend.tf
-3-nomad-example-job-deployment/backend.tf
