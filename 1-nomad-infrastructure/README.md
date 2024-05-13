@@ -3,6 +3,7 @@
 Manage the resources to deploy a HashiCorp Nomad server and client infrastructure.
 prepare the infrastructure for a Vault deployment.
 
+<<<<<<< HEAD
 ## Usage
 
 There are two variables exposed. The first is `default_aws_region` simpelist way to use this is as follows if you have your aws region set, and you are running this code from the terraform client.
@@ -19,6 +20,8 @@ If you want to run this code local to HCP Terraform we'd suggest copy your `id_r
 ssh_key            = "${path.cwd}/files/id_rsa.pub"
 ```
 
+=======
+>>>>>>> 9fe61c6 (add readme)
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
