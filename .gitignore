@@ -54,6 +54,3 @@ override.tf.json
 terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform,shell,git
-
-**/backend.tf
-*backend.tf
