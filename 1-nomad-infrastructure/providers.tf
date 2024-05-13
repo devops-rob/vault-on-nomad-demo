@@ -19,12 +19,12 @@ terraform {
 
 provider "aws" {
   # AWS credentials set up using environment variables
-  region = "eu-west-1"
+  #region = "eu-west-1"
 }
 
 provider "terracurl" {}
 
 provider "nomad" {
-  address = "http://${aws_eip.nomad_server.public_ip}:4646"
+  address   = "http://${aws_eip.nomad_server.public_ip}:4646"
   secret_id = jsondecode(terracurl_request.bootstrap_acl.response).SecretID
 }
