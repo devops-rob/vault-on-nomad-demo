@@ -20,6 +20,13 @@ terraform {
 provider "aws" {
   # AWS credentials set up using environment variables
   #region = "eu-west-1"
+  default_tags {
+    tags = {
+      Environment = "dev-test"
+      Owner       = "Terraform"
+      Project     = "nomad-vault"
+    }
+  }
 }
 
 provider "terracurl" {}
