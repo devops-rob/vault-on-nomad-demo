@@ -11,7 +11,7 @@ terraform login
 export TF_VAR_tfc_org="<your_TF_VAR_tfc_org>"
 
 # export the ssh_key TF_VAR to populate your key this expects default ssh usage
-export export TF_VAR_ssh_key="/Users/$(whoami)/.ssh/id_rsa.pub"
+export TF_VAR_ssh_key="/Users/$(whoami)/.ssh/id_rsa.pub"
 
 # run the set up script which will initiate and create the workspaces using the Terraform client
 # utilises the $TF_VAR_tfc_org env var
