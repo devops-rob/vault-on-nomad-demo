@@ -50,6 +50,7 @@ prepare the infrastructure for a Vault deployment.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_aws_default_region"></a> [aws\_default\_region](#input\_aws\_default\_region) | (optional) variable for aws region | `string` | n/a | yes |
 | <a name="input_ssh_key"></a> [ssh\_key](#input\_ssh\_key) | n/a | `string` | `"/Users/$(whoami)/.ssh/id_rsa.pub"` | no |
 
 ## Outputs

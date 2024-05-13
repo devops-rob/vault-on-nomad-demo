@@ -19,7 +19,7 @@ terraform {
 
 provider "aws" {
   # AWS credentials set up using environment variables
-  #region = "eu-west-1"
+  region = var.aws_default_region
   default_tags {
     tags = {
       Environment = "dev-test"
