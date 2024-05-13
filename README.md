@@ -78,7 +78,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_environment_sensitive_variables"></a> [aws\_environment\_sensitive\_variables](#input\_aws\_environment\_sensitive\_variables) | (Optional) Map of sensitive variables of 'Terraform' category used in the variable set<br><br>Item syntax:<br>{<br>  AWS\_ACCESS\_KEY\_ID = value1,<br>  AWS\_SECRET\_ACCESS\_KEY = value2<br>  ...<br>} | `map(any)` | `{}` | no |
-| <a name="input_environment_variables"></a> [environment\_variables](#input\_environment\_variables) | (Optional) Map of sensitive variables of 'Terraform' category used in the variable set<br><br>Item syntax:<br>{<br>  AWS\_DEFAULT\_REGION = value1,<br>  ssh\_key = value2<br>  ...<br>} | `map(any)` | `{}` | no |
+| <a name="input_environment_variables"></a> [environment\_variables](#input\_environment\_variables) | (Optional) Map of sensitive variables of 'Terraform' category used in the variable set<br><br>Item syntax:<br>{<br>  TF\_VAR\_aws\_default\_region = value0,<br>	AWS\_DEFAULT\_REGION = value1,<br>  ssh\_key = value2<br>  ...<br>} | `map(any)` | `{}` | no |
 | <a name="input_tfc_org"></a> [tfc\_org](#input\_tfc\_org) | n/a | `string` | `"my-org"` | no |
 | <a name="input_variables_descriptions"></a> [variables\_descriptions](#input\_variables\_descriptions) | (Optional) A description for the variable set | `string` | `""` | no |
 

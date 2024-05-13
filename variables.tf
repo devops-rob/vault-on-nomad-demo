@@ -13,7 +13,8 @@ variable "environment_variables" {
 
 Item syntax:
 {
-  AWS_DEFAULT_REGION = value1,
+  TF_VAR_aws_default_region = value0,
+	AWS_DEFAULT_REGION = value1,
   ssh_key = value2
   ...
 }
