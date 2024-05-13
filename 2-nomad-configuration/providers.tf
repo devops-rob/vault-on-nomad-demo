@@ -15,7 +15,7 @@ terraform {
 data "terraform_remote_state" "tfc" {
   backend = "remote"
   config = {
-    organization = "org name"
+    organization = "TFC-ORG"
 
     workspaces = {
       name = "1-nomad-infrastructure"
@@ -29,4 +29,3 @@ provider "nomad" {
 }
 
 provider "terracurl" {}
-

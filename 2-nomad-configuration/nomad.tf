@@ -4,7 +4,7 @@ resource "nomad_namespace" "vault" {
 }
 
 resource "nomad_job" "vault" {
-  jobspec = file("vault.nomad")
+  jobspec = file("${path.cwd}/files/vault.nomad")
   depends_on = [
     nomad_namespace.vault
   ]
@@ -39,14 +39,14 @@ resource "nomad_variable" "unseal" {
   namespace = "vault-cluster"
 
   items = {
-    key1       = jsondecode(terracurl_request.init.response).keys[0]
-    key2       = jsondecode(terracurl_request.init.response).keys[1]
-    key3       = jsondecode(terracurl_request.init.response).keys[2]
+    key1 = jsondecode(terracurl_request.init.response).keys[0]
+    key2 = jsondecode(terracurl_request.init.response).keys[1]
+    key3 = jsondecode(terracurl_request.init.response).keys[2]
   }
 }
 
 resource "nomad_job" "vault-unsealer" {
-  jobspec = file("vault-unsealer.nomad")
+  jobspec = file("${path.cwd}/files/vault-unsealer.nomad")
   depends_on = [
     nomad_namespace.vault,
     nomad_variable.unseal,

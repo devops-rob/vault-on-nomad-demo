@@ -3,7 +3,7 @@ resource "terracurl_request" "nomad_status" {
   name           = "nomad_status"
   response_codes = [200]
   url            = "http://${aws_eip.nomad_server.public_ip}:4646/v1/status/leader"
-  max_retry = 4
+  max_retry      = 4
   retry_interval = 10
 
   depends_on = [
@@ -30,7 +30,7 @@ resource "terracurl_request" "bootstrap_acl" {
 
 resource "nomad_acl_policy" "anonymous" {
   name      = "anonymous"
-  rules_hcl = file("anonymous-policy.hcl")
+  rules_hcl = file("${path.cwd}/files/anonymous-policy.hcl")
 }
 
 resource "nomad_acl_token" "terraform" {

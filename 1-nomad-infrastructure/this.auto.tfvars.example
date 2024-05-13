@@ -1,0 +1,2 @@
+aws_default_region = null
+ssh_key            = "/Users/$(whoami)/.ssh/id_rsa.pub"
